@@ -12,6 +12,7 @@ function game() {
 	let repeat = true;
 	let lives = 6;
 
+
 	while(repeat) {
 		let l = prompt(`${err}Lives: ${lives}\nSearch word: ${inputWord}\nWrite a letter:`);
 		err = '';
@@ -42,7 +43,14 @@ function game() {
 
 		!finded && err === '' && lives--;
 
-		if (inputWord.indexOf('_') === -1) {
+		if (lives <= 0) {
+
+			repeat = false;
+			alert(`You lose!\nSearch word: ${searchWord.join(' ')}`);
+			game();
+
+		} else if (inputWord.indexOf('_') === -1) {
+
 			repeat = false;
 			alert(`You win!\nSearch word: ${inputWord}`);
 			game();
