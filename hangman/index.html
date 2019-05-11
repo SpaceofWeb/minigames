@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman</title>
+<style>
+
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+canvas {
+	display: inline-block;
+}
+
+.info {
+	margin: 5px;
+	order: 1;
+	width: calc(100% - 420px);
+	display: inline-block;
+}
+
+.letters > div {
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	cursor: pointer;
+	border: solid lightblue 0.5px;
+	color: blue;
+	font-size: 18px;
+}
+
+.checked {
+	background-color: rgb(210, 210, 210);
+}
+
+</style>
+</head>
+<body>
+
+<div class="info">
+	<div>
+		Search word: <span id="searchWord"></span>
+	</div>
+	<br>
+
+
+
+
+	<div class="letters">
+		<div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+		<div>E</div>
+		<div>F</div>
+		<div>G</div>
+		<div>H</div>
+		<div>I</div>
+		<div>J</div>
+		<div>K</div>
+		<div>L</div>
+		<div>M</div>
+		<div>N</div>
+		<div>O</div>
+		<div>P</div>
+		<div>Q</div>
+		<div>R</div>
+		<div>S</div>
+		<div>T</div>
+		<div>U</div>
+		<div>V</div>
+		<div>W</div>
+		<div>X</div>
+		<div>Y</div>
+		<div>Z</div>
+	</div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/p5.min.js"></script>
+<script src="js/hangman.js"></script>
+</body>
+</html>
